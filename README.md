@@ -1,2 +1,2 @@
 # Dope-shooter
-My first HTML game
+My first HTML game other than the too many minecraft ones
