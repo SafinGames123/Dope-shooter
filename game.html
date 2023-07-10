@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <style>
+*{
+  cursor: crosshair;
+  text-align: center;
+  font-family: comfortaa regular;
+  color: white;
+}
+body{
+  background-color: #000000;
+}
+#gun{
+  width: 30%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.scene{
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(yellow,rgb(255, 0, 255));
+  position: fixed;
+  top: 25%;
+}
+#score{
+  font-size: 40px;
+}
+a{
+  position: fixed;
+  left: 0;
+}
+</style>
+</head>
+<body>
+  <a href="shooter.html">exit</a>
+  <div class="gun">
+    <img src="costume1.svg" id="gun">
+  </div>
+  <h1>Kill</h1>
+  <div id="score">0</div>
+  <div class="scene">
+    <marquee behavior="scroll" direction="right">
+      <img src="bad guy.png" id="bad_guy8" onclick="kill8()">
+      <img src="bad guy.png" id="bad_guy7" onclick="kill7()">
+      <img src="bad guy.png" id="bad_guy6" onclick="kill6()">
+      <img src="bad guy.png" id="bad_guy5" onclick="kill5()">
+      <img src="bad guy.png" id="bad_guy4" onclick="kill4()">
+      <img src="bad guy.png" id="bad_guy3" onclick="kill3()">
+      <img src="bad guy.png" id="bad_guy2" onclick="kill2()">
+      <img src="bad guy.png" id="bad_guy" onclick="kill()">
+    </marquee>
+    <marquee behavior="scroll" direction="left">
+      <img src="bad guy - Copy.png" id="bad_guy9" onclick="kill9()">
+      <img src="bad guy - Copy.png" id="bad_guy10" onclick="kill10()">
+      <img src="bad guy - Copy.png" id="bad_guy11" onclick="kill11()">
+      <img src="bad guy - Copy.png" id="bad_guy12" onclick="kill12()">
+      <img src="bad guy - Copy.png" id="bad_guy13" onclick="kill13()">
+      <img src="bad guy - Copy.png" id="bad_guy14" onclick="kill14()">
+      <img src="bad guy - Copy.png" id="bad_guy15" onclick="kill15()">
+      <img src="bad guy - Copy.png" id="bad_guy16" onclick="kill16()">
+    </marquee>
+  </div>
+</body>
+<script>
+  function kill() {
+    document.getElementById("bad_guy").style.display = "none"
+    document.getElementById("score").innerText = "1"
+  }
+  function kill2(){
+    document.getElementById("bad_guy2").style.display = "none"
+    document.getElementById("score").innerText = "2"
+  }
+  function kill3(){
+    document.getElementById("bad_guy3").style.display = "none"
+    document.getElementById("score").innerText = "3"
+  }
+  function kill4(){
+    document.getElementById("bad_guy4").style.display = "none"
+    document.getElementById("score").innerText = "4"
+  }
+  function kill5() {
+    document.getElementById("bad_guy5").style.display = "none"
+    document.getElementById("score").innerText = "5"
+  }
+  function kill6(){
+    document.getElementById("bad_guy6").style.display = "none"
+    document.getElementById("score").innerText = "6"
+  }
+  function kill7(){
+    document.getElementById("bad_guy7").style.display = "none"
+    document.getElementById("score").innerText = "7"
+  }
+  function kill8(){
+    document.getElementById("bad_guy8").style.display = "none"
+    document.getElementById("score").innerText = "8"
+  }
+  function kill9() {
+    document.getElementById("bad_guy9").style.display = "none"
+    document.getElementById("score").innerText = "9"
+  }
+  function kill10(){
+    document.getElementById("bad_guy10").style.display = "none"
+    document.getElementById("score").innerText = "10"
+  }
+  function kill11(){
+    document.getElementById("bad_guy11").style.display = "none"
+    document.getElementById("score").innerText = "11"
+  }
+  function kill12(){
+    document.getElementById("bad_guy12").style.display = "none"
+    document.getElementById("score").innerText = "12"
+  }
+  function kill13() {
+    document.getElementById("bad_guy13").style.display = "none"
+    document.getElementById("score").innerText = "13"
+  }
+  function kill14(){
+    document.getElementById("bad_guy14").style.display = "none"
+    document.getElementById("score").innerText = "10"
+  }
+  function kill15(){
+    document.getElementById("bad_guy15").style.display = "none"
+    document.getElementById("score").innerText = "15"
+  }
+  function kill16(){
+    document.getElementById("bad_guy16").style.display = "none"
+    document.getElementById("score").innerText = "16"
+  }
+</script>
+</html>
